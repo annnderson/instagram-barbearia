@@ -168,4 +168,4 @@ Consistência é o fator mais crítico identificado nos dados. A queda de 50% no
 
 **Anderson Rodrigues dos Santos**  
 Analista de Dados Júnior | Business Intelligence  
-[LinkedIn](https://www.linkedin.com/in/) • [Portfólio](https://portfolio.com/) • [GitHub](https://github.com/)
+[LinkedIn](https://www.linkedin.com/in/anderson-r-santos/) • [Portfólio](https://annnderson.github.io/) • [GitHub](https://github.com/annnderson)
