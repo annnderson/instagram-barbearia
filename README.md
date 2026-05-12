@@ -149,9 +149,10 @@ Consistência é o fator mais crítico identificado nos dados. A queda de 50% no
 
 ## 📊 Dashboard
 
-> 🔗 Link do dashboard no Power BI: *(adicionar após finalização)*
+> 🔗 Link do dashboard no Power BI: https://app.powerbi.com/view?r=eyJrIjoiMmVkZWYxM2EtNTAxNy00NmQ0LTliZGMtNDY5YzkyNzA2YTBhIiwidCI6ImQ2MmVkZjk4LTJkNmYtNDBhOS05YTJhLWEwNmE4MmFlOTdlYyJ9)
 
-<!-- Adicionar print do dashboard aqui -->
+<!-- <img width="1272" height="715" alt="Dashboard - Visão Geral" src="https://github.com/user-attachments/assets/99782889-604d-4057-afb8-4b2ee759b51c" />
+ -->
 
 ---
 
