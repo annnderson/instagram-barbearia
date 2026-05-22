@@ -6,7 +6,8 @@ Projeto de análise de dados aplicada a um negócio local real, com o objetivo d
 
 🔗 [Acessar Dashboard no Power BI](https://app.powerbi.com/view?r=eyJrIjoiMmVkZWYxM2EtNTAxNy00NmQ0LTliZGMtNDY5YzkyNzA2YTBhIiwidCI6ImQ2MmVkZjk4LTJkNmYtNDBhOS05YTJhLWEwNmE4MmFlOTdlYyJ9)
 
-![Dashboard - Visão Geral](imagens/dashboard_preview.png)
+<img width="1272" height="715" alt="Dashboard - Visão Geral" src="https://github.com/user-attachments/assets/307c9a83-ddf1-4fbd-a9f4-d679f5819c2c" />
+
 
 ---
 
