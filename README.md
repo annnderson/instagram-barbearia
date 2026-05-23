@@ -84,16 +84,19 @@ Utilizar dados reais do Instagram para:
 studio-faria-instagram-analysis/
 │
 ├── data/
-│   └── database_studio_faria.xlsx     # Base de dados com histórico de posts
+│   └── database_studio_faria.xlsx
 │
 ├── scripts/
-│   └── coleta_automatica.ipynb        # Notebook Google Colab — coleta via API
+│   └── coleta_automatica.ipynb
+│
+├── sql/
+│   └── analise_exploratoria.sql
 │
 ├── dashboard/
-│   └── link_powerbi.txt               # Link para o dashboard interativo
+│   └── link_powerbi.txt
 │
 ├── imagens/
-│   └── dashboard_preview.png          # Print do dashboard
+│   └── dashboard_preview.png
 │
 └── README.md
 ```
