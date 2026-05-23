@@ -260,4 +260,4 @@ Com base nos dados, a estratégia de conteúdo ideal para o perfil:
 **Anderson Rodrigues dos Santos**
 Analista de Dados Júnior | Business Intelligence
 
-[LinkedIn](#) • [Portfólio](#) • [GitHub](#)
+[LinkedIn](https://www.linkedin.com/in/anderson-r-santos/) • [Portfólio](https://annnderson.github.io/)
