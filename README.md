@@ -1,8 +1,12 @@
 # 📊 Análise de Performance e Estratégia de Conteúdo – Instagram Barbearia
 
-Projeto de análise de dados aplicada a um negócio local real, com o objetivo de transformar dados do Instagram em estratégia de conteúdo baseada em evidências — com pipeline de coleta automatizado via API.
+Projeto de análise de dados aplicado a um negócio local real, com foco em transformar métricas do Instagram em decisões estratégicas orientadas por dados.
 
-## 📊 Dashboard
+O projeto evoluiu de uma análise manual para uma estrutura automatizada de coleta, armazenamento e análise de dados, utilizando **Instagram Graph API, Python, SQL, BigQuery, Google Sheets e Power BI**, criando um pipeline contínuo de monitoramento de performance e geração de insights de negócio.
+
+**Stack:** `Python` • `SQL` • `BigQuery` • `Power BI` • `Instagram Graph API` • `Google Sheets` • `Power Query`
+
+---
 
 🔗 [Acessar Dashboard no Power BI](https://app.powerbi.com/view?r=eyJrIjoiMmVkZWYxM2EtNTAxNy00NmQ0LTliZGMtNDY5YzkyNzA2YTBhIiwidCI6ImQ2MmVkZjk4LTJkNmYtNDBhOS05YTJhLWEwNmE4MmFlOTdlYyJ9)
 
@@ -11,37 +15,54 @@ Projeto de análise de dados aplicada a um negócio local real, com o objetivo d
 
 ---
 
-## 🗂️ Índice
+# 🗂️ Índice
 
-- [Contexto](#contexto)
-- [Objetivo](#objetivo)
-- [Ferramentas Utilizadas](#ferramentas-utilizadas)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Pipeline de Dados](#pipeline-de-dados)
-- [Metodologia](#metodologia)
-- [Principais Insights](#principais-insights)
-- [Estratégia Recomendada](#estratégia-recomendada)
-- [Próximos Passos](#próximos-passos)
-
----
-
-## 📍 Contexto
-
-A Barbearia Studio Faria passou por uma mudança de endereço em 2026, migrando para um espaço maior e com maior visibilidade. Com o crescimento potencial do negócio, o Instagram se tornou um canal estratégico para atrair novos clientes — mas a falta de consistência nas postagens e de uma estratégia baseada em dados estava limitando esse crescimento.
-
-Este projeto nasceu da necessidade de entender o que realmente funciona no perfil, substituindo decisões intuitivas por decisões orientadas a dados.
+- [📍 Contexto](#-contexto)
+- [🎯 Objetivo](#-objetivo)
+- [🏗️ Arquitetura do Projeto](#️-arquitetura-do-projeto)
+- [🛠️ Ferramentas Utilizadas](#️-ferramentas-utilizadas)
+- [📁 Estrutura do Projeto](#-estrutura-do-projeto)
+- [🔄 Pipeline de Dados](#-pipeline-de-dados)
+- [🔍 Metodologia](#-metodologia)
+- [🧠 Análise Exploratória com SQL](#-análise-exploratória-com-sql-bigquery)
+- [💾 Técnicas SQL Aplicadas](#-técnicas-sql-aplicadas)
+- [💡 Principais Insights](#-principais-insights)
+- [🚀 Estratégia Recomendada](#-estratégia-recomendada)
+- [📌 Próximos Passos](#-próximos-passos)
+- [👤 Autor](#-autor)
 
 ---
 
-## 🎯 Objetivo
+# 📍 Contexto
 
-Utilizar os dados reais do Instagram para:
+A **Barbearia Studio Faria** passou por uma mudança de endereço em 2026, migrando para um espaço maior e com maior visibilidade. Com o potencial de crescimento do negócio, o Instagram se tornou um canal estratégico para aquisição e relacionamento com clientes.
 
-- Diagnosticar a performance atual do perfil
-- Identificar padrões de alcance, engajamento e conversão por tipo de conteúdo
-- Mapear o funil de conteúdo e o papel de cada formato
-- Definir uma estratégia clara e mensurável para crescimento orgânico
-- Automatizar a coleta de dados via API para monitoramento contínuo
+Apesar do potencial, a ausência de consistência nas postagens e de uma estratégia orientada por dados limitava o crescimento do perfil.
+
+Este projeto nasceu da necessidade de responder perguntas como:
+
+- Quais tipos de conteúdo performam melhor?
+- O que gera alcance versus conversão?
+- Existe um padrão de queda ou crescimento?
+- Qual o papel de cada formato no funil de conteúdo?
+- Como transformar métricas em decisões estratégicas?
+
+O objetivo foi substituir decisões intuitivas por decisões baseadas em dados reais.
+
+---
+
+# 🎯 Objetivo
+
+Utilizar dados reais do Instagram para:
+
+✅ Diagnosticar a performance do perfil  
+✅ Identificar padrões de alcance, engajamento e conversão  
+✅ Comparar formatos de conteúdo (Reels, Stories, Feed e Carrossel)  
+✅ Explorar os dados via SQL para encontrar padrões ocultos  
+✅ Realizar análises estatísticas descritivas  
+✅ Mapear o funil de conteúdo  
+✅ Definir uma estratégia de crescimento orgânico baseada em evidências  
+✅ Automatizar a coleta de dados para monitoramento contínuo
 
 ---
 
@@ -83,15 +104,19 @@ studio-faria-instagram-analysis/
 
 O projeto conta com um pipeline automatizado para coleta de dados de Feed e Reels:
 
-```
+# 🏗️ Arquitetura do Projeto
+
+O projeto utiliza uma arquitetura híbrida, separando a camada operacional da camada analítica.
+
+```text
 Instagram Graph API
         ↓
 Python (Google Colab)
         ↓
-Google Sheets (Database - Studio Faria)
-        ↓
-Power BI (Dashboard atualizado)
-```
+Google Sheets (Base Principal)
+       ↙                 ↘
+BigQuery              Power BI
+(SQL + EDA)          (Dashboard)
 
 ### Como funciona
 
@@ -102,6 +127,15 @@ Power BI (Dashboard atualizado)
 4. Calcula engajamento automaticamente
 5. Insere na planilha na posição correta por data
 6. Sistema anti-duplicatas via ID do post
+
+### 🛠️ Ferramentas Utilizadas
+1. Instagram Graph API	Coleta automatizada das métricas
+2. Python (Google Colab)	Integração API → Base de dados
+3. Google Sheets	Base principal do projeto
+4.BigQuery	Ambiente analítico para SQL
+5. SQL	Exploração e estatística descritiva
+6. Power BI	Dashboard interativo
+7. Power Query	Limpeza e transformação dos dados
 
 **Stories (manual):**
 - Inseridos manualmente na planilha devido à limitação da API
